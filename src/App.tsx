@@ -5,6 +5,7 @@ import { Home } from './_root/pages';
 import SignupForm from './_auth/form/SignupForm';
 import AuthLayout from './_auth/AuthLayou';
 import RootLayout from './_root/RootLayout';
+import { Toaster } from "@/components/ui/toaster"
 
 const App = () => {
     return ( 
@@ -19,9 +20,10 @@ const App = () => {
                 </Route>
                 
             </Routes>
+            <Toaster />
         </main>
         
      );
 }
  
-export default App;
+export default App; 
